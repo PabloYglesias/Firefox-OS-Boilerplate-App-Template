@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<!-- 
+    Exchange the line above for this to enable offline support
+    <html manifest="manifest.appcache">
+
+    Please make your homework before doing this:
+        http://www.alistapart.com/articles/application-cache-is-a-douchebag/
+        http://appcachefacts.info
+    
+ -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+    <title>Firefox OS Boilerplate App</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Firefox OS Boilerplate</h1> 
+        <div id="install">
+            <button>Install</button>
+        </div>
+
+        <!-- Icon that will indicate whether you are online or offline - enabled if you are using offline/appcache (see above) -->
+        <div id="online-status" title="Online"></div>
+    </header>
+
+    <div id="main">
+
+        <h2>WebActivities</h2>
+
+        <button id="pick-image">Pick image</button>
+        <div id="image-presenter"></div>
+
+        <button id="pick-anything">Pick anything</button>
+
+        <button id="record">Take picture</button>
+
+        <button id="dial">Dial number</button>
+
+        <button id="send-sms">Send SMS</button>
+
+        <button id="add-contact">Add contact</button>
+
+        <button id="share">Share URL</button>
+
+        <button id="share-image">Share Image</button>
+        <img id="image-to-share" src="images/logo64.png" alt="">
+
+        <button id="view-url">View URL</button>
+
+        <button id="compose-email">Compose mail</button>
+
+
+        <h2>WebAPIs</h2>
+
+        <button id="add-notification">Add notification</button>
+
+        <button id="lock-orientation">Orientation lock</button>
+
+        <button id="vibrate">Vibrate 2 sec</button>
+
+        <button id="add-alarm">Add alarm</button>
+
+        <button id="check-connection">Check connection</button>
+        <div id="connection-display"></div>
+
+        <button id="check-battery">Check battery</button>
+        <div id="battery-display"></div>
+    </div>
+
+    <footer>
+        <ul>
+            <li><button id="save-bookmark">Save bookmark</button></li>
+            <li><button id="reload" class="reload">Reload</button></li>
+        </ul>
+    </footer>
+
+    <script type="text/javascript" src="js/base.js"></script>
+    <script type="text/javascript" src="js/webapp.js"></script>
+    <script type="text/javascript" src="js/offline.js"></script>
+
+    <!-- 
+        Loosely based on fxosstub: https://github.com/Jaxo/fxosstub
+        Loosely based on Firefox-OS-Boilerplate-App: https://github.com/robnyman/Firefox-OS-Boilerplate-App
+    -->
+
+</body>
+</html>
